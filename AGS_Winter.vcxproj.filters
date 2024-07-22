@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{03453382-05dc-4a7e-bb7a-a53be4949abf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Common">
+      <UniqueIdentifier>{8e0bc983-8bd9-4c94-bd77-35ec9d6deff8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Manager">
+      <UniqueIdentifier>{54762e28-21fd-4ad5-932a-1157b5799d41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Object">
+      <UniqueIdentifier>{dc90725b-7825-444b-9217-555aa55e093b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Object\Common">
+      <UniqueIdentifier>{aa94ec64-718f-4ac3-983a-f1e46711e402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Scene">
+      <UniqueIdentifier>{555756cc-fe3e-4e26-943e-2c3715168cc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Utility">
+      <UniqueIdentifier>{eaddcc3e-1077-4aba-b9fd-0d38b20def37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Object\Character">
+      <UniqueIdentifier>{ad3e6ec3-2288-4706-b830-71f1335c294c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Object\StageObject">
+      <UniqueIdentifier>{c61248aa-9adb-4394-a34c-95c2453e2434}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\Application.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Common\Fader.cpp">
+      <Filter>Src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Common\IntVector3.cpp">
+      <Filter>Src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Common\Quaternion.cpp">
+      <Filter>Src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Common\Vector2.cpp">
+      <Filter>Src\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Manager\Camera.cpp">
+      <Filter>Src\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Manager\InputManager.cpp">
+      <Filter>Src\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Manager\Resource.cpp">
+      <Filter>Src\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Manager\ResourceManager.cpp">
+      <Filter>Src\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Manager\SceneManager.cpp">
+      <Filter>Src\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Utility\AsoUtility.cpp">
+      <Filter>Src\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\GameScene.cpp">
+      <Filter>Src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\SceneBase.cpp">
+      <Filter>Src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\TitleScene.cpp">
+      <Filter>Src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Object\Grid.cpp">
+      <Filter>Src\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Object\SpaceDome.cpp">
+      <Filter>Src\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Object\Common\Transform.cpp">
+      <Filter>Src\Object\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Object\Sphere.cpp">
+      <Filter>Src\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Object\Stage.cpp">
+      <Filter>Src\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Utility\UshiUtility.cpp">
+      <Filter>Src\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\ResultScene.cpp">
+      <Filter>Src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Object\Common\AnimationController.cpp">
+      <Filter>Src\Object\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Object\Character\Player.cpp">
+      <Filter>Src\Object\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Object\Common\Collider.cpp">
+      <Filter>Src\Object\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Object\Character\CharBase.cpp">
+      <Filter>Src\Object\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Object\Common\Capsule.cpp">
+      <Filter>Src\Object\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Object\StageObject\Block.cpp">
+      <Filter>Src\Object\StageObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Object\StageObject\Plane.cpp">
+      <Filter>Src\Object\StageObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\ClearScene.cpp">
+      <Filter>Src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Scene\TutorialScene.cpp">
+      <Filter>Src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Object\Stage2D.cpp">
+      <Filter>Src\Object</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\main.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Application.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Common\Fader.h">
+      <Filter>Src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Common\IntVector3.h">
+      <Filter>Src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Common\Quaternion.h">
+      <Filter>Src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Common\Vector2.h">
+      <Filter>Src\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Manager\Camera.h">
+      <Filter>Src\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Manager\InputManager.h">
+      <Filter>Src\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Manager\Resource.h">
+      <Filter>Src\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Manager\ResourceManager.h">
+      <Filter>Src\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Manager\SceneManager.h">
+      <Filter>Src\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Utility\AsoUtility.h">
+      <Filter>Src\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\GameScene.h">
+      <Filter>Src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\SceneBase.h">
+      <Filter>Src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\TitleScene.h">
+      <Filter>Src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Object\Grid.h">
+      <Filter>Src\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Object\SpaceDome.h">
+      <Filter>Src\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Object\Common\Transform.h">
+      <Filter>Src\Object\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Object\Sphere.h">
+      <Filter>Src\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Object\Stage.h">
+      <Filter>Src\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Utility\UshiUtility.h">
+      <Filter>Src\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Src\Scene\ResultScene.h">
+      <Filter>Src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Object\Common\AnimationController.h">
+      <Filter>Src\Object\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Object\Character\Player.h">
+      <Filter>Src\Object\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Object\Common\Collider.h">
+      <Filter>Src\Object\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Object\Character\CharBase.h">
+      <Filter>Src\Object\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Object\Common\Capsule.h">
+      <Filter>Src\Object\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Object\StageObject\Block.h">
+      <Filter>Src\Object\StageObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Object\StageObject\Plane.h">
+      <Filter>Src\Object\StageObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\ClearScene.h">
+      <Filter>Src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Scene\TutorialScene.h">
+      <Filter>Src\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Object\Stage2D.h">
+      <Filter>Src\Object</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AGS_Winter.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
