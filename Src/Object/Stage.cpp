@@ -24,9 +24,9 @@ void Stage::Init(void)
 	//float scale = 30.0f;
 	float scale = 0.3f;
 	transform_.scl = { scale, scale, scale };
-	transform_.pos = { 0.0f, 200.0f, 0.0f };
+	transform_.pos = { 0.0f, 0.0f, 10.0f };
 	transform_.quaRot = Quaternion::Euler(
-		0.0f, AsoUtility::Deg2RadF(0.0f),
+		0.0f, AsoUtility::Deg2RadF(90.0f),
 		0.0f);
 	transform_.quaRotLocal = Quaternion();
 
@@ -35,13 +35,6 @@ void Stage::Init(void)
 	transform_.MakeCollider(Collider::TYPE::STAGE);
 
 	transform_.Update();
-
-	////ステージを取得する
-	//auto activeStage = transform_;
-
-	//// ステージの当たり判定をプレイヤーに設定
-	//player_.ClearCollider();
-	//player_.AddCollider(activeStage.collider);
 
 	for (int y = 0; y < 2; y++)
 	{
@@ -53,14 +46,10 @@ void Stage::Init(void)
 		}
 	}
 
-	//LoadUsedCsvCol();
-
 }
 
 void Stage::Update(void)
 {
-	//transform_.pos = follow_.pos;
-
 	transform_.Update();
 }
 

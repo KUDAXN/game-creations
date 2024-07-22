@@ -30,12 +30,12 @@ public:
 	static constexpr float MASS = 0.5f;
 
 	// ジャンプ力
-	//static constexpr float POW_JUMP = 20.0f;
-	static constexpr float POW_JUMP = 11.0f;
+	static constexpr float POW_JUMP = 7.0f;
+	static constexpr float POW_JUMP2D = 5.0f;
 
 	// ジャンプ受付時間
-	//static constexpr float TIME_JUMP_IN = 0.3f;
-	static constexpr float TIME_JUMP_IN = 0.4f;
+	static constexpr float TIME_JUMP_IN = 0.5f;
+	static constexpr float TIME_JUMP_IN2D = 0.3f;
 
 
 	//アニメーション
@@ -153,6 +153,7 @@ private:
 
 	//ジャンプ処理
 	void ProcessJump(void);
+	void ProcessJump2D(void);
 
 	//衝突判定
 	void Collision(void);

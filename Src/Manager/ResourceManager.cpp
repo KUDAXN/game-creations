@@ -41,7 +41,7 @@ void ResourceManager::Init(void)
 	resourcesMap_.emplace(SRC::PLAYER, res);
 
 	//ステージ１
-	res = Resource(Resource::TYPE::MODEL, Application::PATH_MODEL + "Stage/H_stage_2.mv1");
+	res = Resource(Resource::TYPE::MODEL, Application::PATH_MODEL + "Stage/H_stage.mv1");
 	resourcesMap_.emplace(SRC::STAGE1, res);
 	
 	//ステージ2

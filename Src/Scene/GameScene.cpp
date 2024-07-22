@@ -156,14 +156,9 @@ void GameScene::Draw(void)
 		stage_->Draw();
 	}
 
-	//skyDome_->Draw();
-
-	//grid_->Draw();
 	player_->Draw();
 
 	//DrawDebug();
-
-
 
 }
 
@@ -210,11 +205,11 @@ void GameScene::ReSpawn(void)
 	//ƒŠƒXƒ|[ƒ“
 	if (isMiddle_)
 	{
-		player_->SetPos({ 10.0f, 0.0f, 0.0f });
+		player_->SetPos({ 100.0f, 0.0f, 0.0f });
 	}
 	else
 	{
-		player_->SetPos({ -600.0f, 0.0f, 0.0f });
+		player_->SetPos({ -600.0f, 0.0f, -10.0f });
 	}
 
 }
@@ -222,7 +217,7 @@ void GameScene::ReSpawn(void)
 void GameScene::OrtSave(void)
 {
 
-	if (player_->GetTransform().pos.x > -147.0f)
+	if (player_->GetTransform().pos.x > 0.0f)
 	{
 		isMiddle_ = true;
 	}

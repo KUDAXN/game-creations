@@ -77,11 +77,18 @@ void Player::Update(const Camera::MODE& cameraMode)
 
 		//Gravity2D();
 
+		//ジャンプ
+		ProcessJump2D();
+
+
 		break;
 
 	case Camera::MODE::FOLLOW_3D:
 
 		Update3D();
+
+		//ジャンプ
+		ProcessJump();
 
 		break;
 
@@ -94,8 +101,6 @@ void Player::Update(const Camera::MODE& cameraMode)
 	//重力による移動
 	Gravity();
 
-	//ジャンプ
-	ProcessJump();
 
 
 	auto& ins = InputManager::GetInstance();
@@ -311,7 +316,7 @@ void Player::Process3D(void)
 		SetGoalRotate(rotRad);
 
 
-		if (!isJump_ && IsEndLanding())
+		if (!isJump_)
 		{
 			//歩くアニメーションの再生
 			animationController_->Play((int)ANIM_TYPE::WALK);
@@ -668,6 +673,53 @@ void Player::ProcessJump(void)
 	{
 		stepJump_ = TIME_JUMP_IN;
 	}
+
+}
+void Player::ProcessJump2D(void)
+{
+	bool isHit = CheckHitKey(KEY_INPUT_BACKSLASH);
+	//bool isHit = CheckHitKey(KEY_INPUT_RSHIFT);
+
+	// ジャンプ
+	if (isHit && (isJump_ || IsEndLanding()))
+	{
+		if (!isJump_)
+		{
+			// 制御無しジャンプ
+			//animationController_->Play((int)ANIM_TYPE::JUMP);
+			// この後、いくつかのジャンプパターンを試します1
+
+			// ループしないジャンプ
+			//animationController_->Play((int)ANIM_TYPE::JUMP,false);
+
+			//切り取りアニメーション
+			//animationController_->Play(
+			//	(int)ANIM_TYPE::JUMP, false, 13.0f, 24.0f);
+
+			//無理やりアニメーション
+			animationController_->Play(
+				(int)ANIM_TYPE::JUMP, true, 13.0f, 25.0f);
+
+			animationController_->SetEndLoop(23.0f, 25.0f, 20.0f);
+
+		}
+
+		isJump_ = true;
+
+		// ジャンプの入力受付時間をヘラス 
+		stepJump_ += SceneManager::GetInstance().GetDeltaTime();
+
+		if (stepJump_ < TIME_JUMP_IN2D)
+		{
+			jumpPow_ = VScale(AsoUtility::DIR_U, POW_JUMP2D);
+		}
+	}
+
+	//// ボタンを離したらジャンプ力に加算しない
+	//if (!isHit)
+	//{
+	//	stepJump_ = TIME_JUMP_IN;
+	//}
 
 }
 

@@ -24,9 +24,9 @@ void Stage2D::Init(void)
 	//float scale = 30.0f;
 	float scale = 0.3f;
 	transform_.scl = { scale, scale, scale };
-	transform_.pos = { 0.0f, 200.0f, 0.0f };
+	transform_.pos = { 0.0f, 0.0f, 10.0f };
 	transform_.quaRot = Quaternion::Euler(
-		0.0f, AsoUtility::Deg2RadF(0.0f),
+		0.0f, AsoUtility::Deg2RadF(90.0f),
 		0.0f);
 	transform_.quaRotLocal = Quaternion();
 
